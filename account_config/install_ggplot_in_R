@@ -1,2 +1,2 @@
 system("cd ~;mkdir -p my-r-packages ",intern=TRUE)
-install.packages("ggplot2",lib="/home/jpy_class/mit/12.010/cnh@mit.edu/my-r-packages")
+install.packages("ggplot2",lib="~/my-r-packages")
