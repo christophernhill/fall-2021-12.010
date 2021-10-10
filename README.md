@@ -7,4 +7,6 @@ Lec04_keyboardIO.ipynb, polyarea.ipynb and poly1.in added for 21/09/21 Class
 
 Lec07_graphics.ipynb added for 21/09/30 Class
 
-Updated Lec07_graphics and added Lec08_interactive for 20/10/05 class
+Updated Lec07_graphics and added Lec08_interactive for 21/10/05 class
+
+Uploaded Lec10_regression code for 21/10/12 class.
