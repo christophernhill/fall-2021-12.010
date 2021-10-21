@@ -1,0 +1,8 @@
+a.out: Lec013_myadd_main.o Lec013_myadd_func.o
+	gcc Lec013_myadd_main.o Lec013_myadd_func.o
+
+Lec013_myadd_main.o: Lec013_myadd_main.c
+	gcc -c Lec013_myadd_main.c
+
+Lec013_myadd_func.o: Lec013_myadd_func.c
+	gcc -c Lec013_myadd_func.c
