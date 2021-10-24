@@ -12,3 +12,6 @@ Updated Lec07_graphics and added Lec08_interactive for 21/10/05 class
 Uploaded Lec10_regression code for 21/10/12 class.
 
 Uploaded Lec12_formatting.ipynb for 21/10/19 class.  Needs a tux.png file as local copy.
+
+*Created* Fortran folder and uploaded Fortran codes for Lecture 14. 21/10/24
+
