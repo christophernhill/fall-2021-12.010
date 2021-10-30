@@ -15,3 +15,6 @@ Uploaded Lec12_formatting.ipynb for 21/10/19 class.  Needs a tux.png file as loc
 
 *Created* Fortran folder and uploaded Fortran codes for Lecture 14. 21/10/24
 
+**HWO2** Notebook solution added 21/10/30.
+
+
