@@ -1,7 +1,6 @@
 /*
-  A very basic poly_area in C.
-  Illustrates arrays, loops, functions and minimal pointers.
-  Does not use structures and types or memory allocation yet.
+  A poly_area in C.
+  Uses structures, types and memory allocation.
 */
 #include <stdio.h>
 #include <stdlib.h>
