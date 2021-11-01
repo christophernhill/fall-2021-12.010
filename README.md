@@ -15,6 +15,8 @@ Uploaded Lec12_formatting.ipynb for 21/10/19 class.  Needs a tux.png file as loc
 
 *Created* Fortran folder and uploaded Fortran codes for Lecture 14. 21/10/24
 
-**HWO2** Notebook solution added 21/10/30.
+**HWO2** Notebook solution added 21/10/30. Updated HW02 solution to fix ninit typo error in UNR
+
+Updloaded Lec16_class.ipynb for 21/11/02 class.
 
 
