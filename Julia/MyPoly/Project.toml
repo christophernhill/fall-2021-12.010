@@ -1,0 +1,7 @@
+name = "MyPoly"
+uuid = "3887c68e-a182-4a7e-8e68-43fbd6698b4c"
+authors = ["christophernhill <cnh@mit.edu>"]
+version = "0.1.0"
+
+[deps]
+StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
