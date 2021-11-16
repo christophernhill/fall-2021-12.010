@@ -3,7 +3,7 @@
 """
 abstract type AbstractPolygon end
 
-struct MyPoly <: AbstractPolygon
+struct MyPolyVar <: AbstractPolygon
         plist::Vector{MyPoint}
         nmax::Array{Int,1}
         ncur::Array{Int,1}
@@ -11,21 +11,21 @@ end
 
 # Join two polygon sets of points together
 # - creates a new poly
-function join(poly1::MyPoly, poly2::MyPoly)
+function join(poly1::MyPolyVar, poly2::MyPolyVar)
         ncur=length(poly1.plist) + length(poly2.plist)
-        MyPoly(vcat(poly1.plist,poly2.plist),ncur)
+        MyPolyVar(vcat(poly1.plist,poly2.plist),ncur)
 end
 
 # Append a point to a polygon
 # - updates in place if there is free space, or otherwise 
 # - allocates and returns larger poly with orginal points
 # - copied over.
-function append!(poly::MyPoly, p::MyPoint)
+function append!(poly::MyPolyVar, p::MyPoint)
         ncur=poly.ncur[1]
         nmax=poly.nmax[1]
         if ncur+1 > nmax
            nmax=nmax+100
-           poly=MyPoly(poly.plist,nmax)
+           poly=MyPolyVar(poly.plist,nmax)
         end
         poly.plist[ncur+1]=p
         poly.ncur[1]=ncur+1
@@ -34,7 +34,7 @@ end
 
 # Allocate a new poly from point list
 # - allocate at least nmax points 
-function MyPoly(p::Vector{MyPoint},nmax::Int)
+function MyPolyVar(p::Vector{MyPoint},nmax::Int)
         # Set total size
         ncur=length(p)
         nmax=Int(ceil(ncur/nmax))*nmax
@@ -43,13 +43,13 @@ function MyPoly(p::Vector{MyPoint},nmax::Int)
         for i=1:nmax
           plist[i]=MyPoint(-999, -999)
         end
-        poly=MyPoly(plist,[nmax],[ncur])
+        poly=MyPolyVar(plist,[nmax],[ncur])
         # Set values for given points
         poly.plist[1:ncur]=p
         return poly
 end
 
-function area(poly::MyPoly)
+function area(poly::MyPolyVar)
         ta=0.
         p0=poly.plist[1]
         for i=3:poly.ncur[1]
@@ -62,7 +62,7 @@ end
 
 # Some inheritance
 struct MyRectangle <: AbstractPolygon
-        rpoly::MyPoly
+        rpoly::MyPolyVar
         width::Float64
         height::Float64
 end
