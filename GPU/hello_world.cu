@@ -3,6 +3,7 @@
 /*
  * A simple introduction to programming in CUDA. 
  * This program prints "Hello World from GPU! from 10 CUDA threads running on the GPU."
+ * (see - https://github.com/deeperlearning/professional-cuda-c-programming )
  */
 
 __global__ void helloFromGPU()
