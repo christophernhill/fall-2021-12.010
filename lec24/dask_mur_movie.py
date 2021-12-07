@@ -1,3 +1,11 @@
+#
+# hand dask setup (using screen)
+#   $ dask-scheduler
+#   $ dask-worker --nprocs 30 --memory-limit 2GB --nthreads 2 tcp://127.0.0.1:8786
+#
+# ffmpeg command
+#   $ ffmpeg -r 48 -s 1920x1080 -i fig-%06d.png -b:v 16M -pix_fmt yuv420p -r 24 foo.mp4
+#
 import xarray as xr
 from pytictoc import TicToc
 t = TicToc()
